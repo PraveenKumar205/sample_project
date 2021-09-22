@@ -1,5 +1,7 @@
 name: GitHub Actions Demo
 on: [push]
+env:
+  GCS_BUCKET: ${{ secrets.GCS_BUCKET }}
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -16,3 +18,12 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: echo "this is secret ${{ secrets.GCS_BUCKET }}"
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup - gcloud / gsutil
+        uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+        with:
+          service_account_key: ${{ secrets.GCS_SA_KEY }}
+          project_id: ${{ secrets.GCS_PROJECT }}
+          export_default_credentials: true
