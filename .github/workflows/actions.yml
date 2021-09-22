@@ -18,9 +18,3 @@ jobs:
       - name: Upload file
         run: |
           gsutil cp README.md gs://uatvndrs.shopups2.xyz/maps/
-
-      # # Example of using the output
-      # - id: uploaded-files
-      #   uses: foo/bar@master
-      #   env:
-      #     file: ${{steps.upload-file.outputs.uploaded}}
