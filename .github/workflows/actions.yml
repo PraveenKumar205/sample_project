@@ -17,7 +17,7 @@ jobs:
 
       - name: Upload file
         run: |
-          gsutil cp README.md gs://check_upload/
+          gsutil cp README.md gs://uatvndrs.shopups2.xyz/maps/
 
       # # Example of using the output
       # - id: uploaded-files
