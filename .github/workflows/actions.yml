@@ -6,6 +6,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
       - id: upload-file
         uses: google-github-actions/upload-cloud-storage@main
         with:
