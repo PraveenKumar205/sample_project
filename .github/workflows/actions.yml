@@ -12,8 +12,8 @@ jobs:
           path: ./public/robots.txt 
           destination: uatvndrs.shopups2.xyz/dummy
 
-      # Example of using the output
-      - id: uploaded-files
-        uses: foo/bar@master
-        env:
-          file: ${{steps.upload-file.outputs.uploaded}}
+      # # Example of using the output
+      # - id: uploaded-files
+      #   uses: foo/bar@master
+      #   env:
+      #     file: ${{steps.upload-file.outputs.uploaded}}
