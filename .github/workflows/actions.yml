@@ -9,7 +9,7 @@ jobs:
       - id: upload-file
         uses: google-github-actions/upload-cloud-storage@main
         with:
-          path: ./public/robots.txt 
+          path: public/robots.txt 
           destination: uatvndrs.shopups2.xyz/dummy
 
       # # Example of using the output
