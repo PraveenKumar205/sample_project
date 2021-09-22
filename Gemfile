@@ -29,9 +29,20 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'mysql2'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails'
+  gem 'database_cleaner'
+  gem 'rspec-json_expectations'
+  gem 'rspec-activemodel-mocks'
+  gem 'rspec-mocks'
+  gem 'rspec_junit_formatter'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'factory_bot_rails'
+  gem 'simplecov'
+  gem 'simplecov-lcov'
 end
 
 group :development do
