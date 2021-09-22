@@ -16,8 +16,8 @@ jobs:
           export_default_credentials: true
 
       - name: Upload file
-          run: |
-            gsutil cp README.md gs://check_upload/
+        run: |
+          gsutil cp README.md gs://check_upload/
 
       # # Example of using the output
       # - id: uploaded-files
