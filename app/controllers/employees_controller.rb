@@ -61,8 +61,13 @@ class EmployeesController < ApplicationController
   end
 
   def say_hello
+    add = 1 + 2
+    subtract = 2-1
+    multiply = 1 * 2
+    divide = 2/1
     render :json => { "success": true, "message": "Hello" }
   end
+  
 
   private
     # Use callbacks to share common setup or constraints between actions.
