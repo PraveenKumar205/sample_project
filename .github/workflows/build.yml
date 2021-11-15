@@ -18,13 +18,13 @@ jobs:
         - 33306:3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
-      # - name: Checkout Code
-      #   uses: actions/checkout@v2
-      # - name: Install SSH keys
-      #   uses: shimataro/ssh-key-action@v2
-      #   with:
-      #     key: ${{ secrets.SSH_PRIVATE_KEY }}
-      #     known_hosts: "Add known public keys of github here"
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Install SSH keys
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: "Add known public keys of github here"
       # - name: Verify MySQL
       #   run: |
       #     sudo apt-get update
