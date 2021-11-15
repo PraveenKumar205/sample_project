@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       - name: Verify MySQL
         run: |
           sudo apt-get update
@@ -27,8 +29,6 @@ jobs:
           mysql --host 127.0.0.1 --port 33306 -uroot -ppassword -e "SHOW GRANTS FOR 'root'@'localhost'"
           mysql --host 127.0.0.1 --port 33306 -uroot -ppassword -e "SET GLOBAL sql_mode = ''"
           mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql --host 127.0.0.1 --port 33306 -uroot -ppassword mysql
-        with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       # - name: Setup Ruby and install gems
       #   uses: ruby/setup-ruby@v1
       #   with:
