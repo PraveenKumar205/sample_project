@@ -65,7 +65,8 @@ class EmployeesController < ApplicationController
     subtract = 2-1
     multiply = 1 * 2
     divide = 2/1
-    render :json => { "success": true, "message": "Hello" }
+    result = add + subtract + multiply+divide
+    render :json => { "success": true, "message": "Hello" , result: result}
   end
   
 
