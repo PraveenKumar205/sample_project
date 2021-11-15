@@ -20,20 +20,20 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
-      - name: Install SSH keys
-        uses: shimataro/ssh-key-action@v2
-        with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          known_hosts: "Add known public keys of github here"
-      # - name: Verify MySQL
-      #   run: |
-      #     sudo apt-get update
-      #     sudo apt-get install -y build-essential python-dev nginx-extras pkg-config cmake libxrender1 libmysqlclient-dev ncurses-dev gettext flex bison autoconf binutils-doc redis-tools vim nfs-common jq bc
-      #     mysql --host 127.0.0.1 --port 33306 -uroot -ppassword -e "SHOW GRANTS FOR 'root'@'localhost'"
-      #     mysql --host 127.0.0.1 --port 33306 -uroot -ppassword -e "SET GLOBAL sql_mode = ''"
-      #     mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql --host 127.0.0.1 --port 33306 -uroot -ppassword mysql
+      # - name: Install SSH keys
+      #   uses: shimataro/ssh-key-action@v2
       #   with:
-      #     fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+      #     key: ${{ secrets.SSH_PRIVATE_KEY }}
+      #     known_hosts: "Add known public keys of github here"
+      - name: Verify MySQL
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential python-dev nginx-extras pkg-config cmake libxrender1 libmysqlclient-dev ncurses-dev gettext flex bison autoconf binutils-doc redis-tools vim nfs-common jq bc
+          mysql --host 127.0.0.1 --port 33306 -uroot -ppassword -e "SHOW GRANTS FOR 'root'@'localhost'"
+          mysql --host 127.0.0.1 --port 33306 -uroot -ppassword -e "SET GLOBAL sql_mode = ''"
+          mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql --host 127.0.0.1 --port 33306 -uroot -ppassword mysql
+        with:
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       # - name: Setup Ruby and install gems
       #   uses: ruby/setup-ruby@v1
       #   with:
