@@ -9,6 +9,9 @@
         0,
         0,
         0
+      ],
+      "branches": [
+
       ]
     },
     "/Users/praveenkumara/vshop_repo/sample_project/app/channels/application_cable/connection.rb": {
@@ -17,12 +20,18 @@
         0,
         0,
         0
+      ],
+      "branches": [
+
       ]
     },
     "/Users/praveenkumara/vshop_repo/sample_project/app/controllers/application_controller.rb": {
       "lines": [
         1,
         null
+      ],
+      "branches": [
+
       ]
     },
     "/Users/praveenkumara/vshop_repo/sample_project/app/controllers/employees_controller.rb": {
@@ -110,12 +119,41 @@
         0,
         null,
         null
+      ],
+      "branches": [
+        {
+          "type": "then",
+          "start_line": 29,
+          "end_line": 30,
+          "coverage": 0
+        },
+        {
+          "type": "else",
+          "start_line": 32,
+          "end_line": 33,
+          "coverage": 0
+        },
+        {
+          "type": "then",
+          "start_line": 45,
+          "end_line": 46,
+          "coverage": 0
+        },
+        {
+          "type": "else",
+          "start_line": 48,
+          "end_line": 49,
+          "coverage": 0
+        }
       ]
     },
     "/Users/praveenkumara/vshop_repo/sample_project/app/helpers/application_helper.rb": {
       "lines": [
         0,
         0
+      ],
+      "branches": [
+
       ]
     },
     "/Users/praveenkumara/vshop_repo/sample_project/app/helpers/employees_helper.rb": {
@@ -127,6 +165,9 @@
         0,
         0,
         0
+      ],
+      "branches": [
+
       ]
     },
     "/Users/praveenkumara/vshop_repo/sample_project/app/jobs/application_job.rb": {
@@ -138,6 +179,9 @@
         null,
         null,
         0
+      ],
+      "branches": [
+
       ]
     },
     "/Users/praveenkumara/vshop_repo/sample_project/app/mailers/application_mailer.rb": {
@@ -146,6 +190,9 @@
         0,
         0,
         0
+      ],
+      "branches": [
+
       ]
     },
     "/Users/praveenkumara/vshop_repo/sample_project/app/models/application_record.rb": {
@@ -153,6 +200,9 @@
         0,
         0,
         0
+      ],
+      "branches": [
+
       ]
     },
     "/Users/praveenkumara/vshop_repo/sample_project/app/models/employee.rb": {
@@ -160,6 +210,9 @@
         0,
         0,
         0
+      ],
+      "branches": [
+
       ]
     },
     "/Users/praveenkumara/vshop_repo/sample_project/app/models/employer.rb": {
@@ -167,6 +220,9 @@
         0,
         0,
         0
+      ],
+      "branches": [
+
       ]
     }
   }

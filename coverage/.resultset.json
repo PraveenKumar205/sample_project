@@ -86,13 +86,25 @@
           0,
           null,
           null
-        ]
+        ],
+        "branches": {
+          "[:if, 0, 28, 6, 34, 9]": {
+            "[:then, 1, 29, 8, 30, 75]": 0,
+            "[:else, 2, 32, 8, 33, 84]": 0
+          },
+          "[:if, 3, 44, 6, 50, 9]": {
+            "[:then, 4, 45, 8, 46, 70]": 0,
+            "[:else, 5, 48, 8, 49, 84]": 0
+          }
+        }
       },
       "/Users/praveenkumara/vshop_repo/sample_project/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null
-        ]
+        ],
+        "branches": {
+        }
       },
       "/Users/praveenkumara/vshop_repo/sample_project/app/mailers/application_mailer.rb": {
         "lines": [
@@ -186,6 +198,6 @@
         }
       }
     },
-    "timestamp": 1636987447
+    "timestamp": 1636997204
   }
 }
