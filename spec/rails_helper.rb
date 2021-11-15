@@ -18,7 +18,7 @@ SimpleCov.start 'rails' do
   # add_group "Decorators" "app/decorators"
 
   # Report branch coverage to trigger branch-level undercover warnings
-  enable_coverage :branch
+  # enable_coverage :branch
 
   formatter SimpleCov::Formatter::MultiFormatter.new([
     # SimpleCov::Formatter::SimpleFormatter,
