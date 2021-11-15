@@ -20,11 +20,6 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
-      # - name: Install SSH keys
-      #   uses: shimataro/ssh-key-action@v2
-      #   with:
-      #     key: ${{ secrets.SSH_PRIVATE_KEY }}
-      #     known_hosts: "Add known public keys of github here"
       - name: Verify MySQL
         run: |
           sudo apt-get update
