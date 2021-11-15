@@ -20,7 +20,12 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
+  adapter: mysql2
+  port: 3306
+  host: localhost
+  username: root
+  password: password
+  timeout: 5000
   database: my_db_test
 
 production:

@@ -60,6 +60,10 @@ class EmployeesController < ApplicationController
     end
   end
 
+  def say_hello
+    render :json => { "success": true, "message": "Hello" }
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_employee
