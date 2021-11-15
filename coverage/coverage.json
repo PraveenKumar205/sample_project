@@ -1,6 +1,6 @@
 {
   "meta": {
-    "simplecov_version": "0.20.0"
+    "simplecov_version": "0.21.2"
   },
   "coverage": {
     "/Users/praveenkumara/vshop_repo/sample_project/app/channels/application_cable/channel.rb": {
@@ -91,6 +91,12 @@
         null,
         1,
         1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null,
         null,
         1,
@@ -114,6 +120,11 @@
     },
     "/Users/praveenkumara/vshop_repo/sample_project/app/helpers/employees_helper.rb": {
       "lines": [
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0
       ]
