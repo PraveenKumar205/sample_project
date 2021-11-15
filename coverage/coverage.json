@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "simplecov_version": "0.20.0"
+  },
+  "coverage": {
+    "/Users/praveenkumara/vshop_repo/sample_project/app/channels/application_cable/channel.rb": {
+      "lines": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "/Users/praveenkumara/vshop_repo/sample_project/app/channels/application_cable/connection.rb": {
+      "lines": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "/Users/praveenkumara/vshop_repo/sample_project/app/controllers/application_controller.rb": {
+      "lines": [
+        1,
+        null
+      ]
+    },
+    "/Users/praveenkumara/vshop_repo/sample_project/app/controllers/employees_controller.rb": {
+      "lines": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ]
+    },
+    "/Users/praveenkumara/vshop_repo/sample_project/app/helpers/application_helper.rb": {
+      "lines": [
+        0,
+        0
+      ]
+    },
+    "/Users/praveenkumara/vshop_repo/sample_project/app/helpers/employees_helper.rb": {
+      "lines": [
+        0,
+        0
+      ]
+    },
+    "/Users/praveenkumara/vshop_repo/sample_project/app/jobs/application_job.rb": {
+      "lines": [
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0
+      ]
+    },
+    "/Users/praveenkumara/vshop_repo/sample_project/app/mailers/application_mailer.rb": {
+      "lines": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "/Users/praveenkumara/vshop_repo/sample_project/app/models/application_record.rb": {
+      "lines": [
+        0,
+        0,
+        0
+      ]
+    },
+    "/Users/praveenkumara/vshop_repo/sample_project/app/models/employee.rb": {
+      "lines": [
+        0,
+        0,
+        0
+      ]
+    },
+    "/Users/praveenkumara/vshop_repo/sample_project/app/models/employer.rb": {
+      "lines": [
+        0,
+        0,
+        0
+      ]
+    }
+  }
+}

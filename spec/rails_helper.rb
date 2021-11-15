@@ -8,6 +8,7 @@ require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 require 'simplecov'
 require 'simplecov-lcov'
+require 'simplecov_json_formatter'
 
 SimpleCov.start 'rails' do
   # For RSpec
@@ -24,6 +25,7 @@ SimpleCov.start 'rails' do
     # SimpleCov::Formatter::SimpleFormatter,
     SimpleCov::Formatter::LcovFormatter,
     SimpleCov::Formatter::HTMLFormatter,
+    SimpleCov::Formatter::JSONFormatter
     # Coveralls::SimpleCov::Formatter
   ])
 end

@@ -41,8 +41,9 @@ group :development, :test do
   gem 'rspec_junit_formatter'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'factory_bot_rails'
-  gem 'simplecov', '~> 0.17.0'
-  gem 'simplecov-lcov', '~> 0.7.0'
+  gem 'simplecov', '~> 0.20.0'
+  gem 'simplecov-lcov'
+  gem 'simplecov_json_formatter'
 end
 
 group :development do
