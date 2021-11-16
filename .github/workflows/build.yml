@@ -48,6 +48,7 @@ jobs:
       - name: Fix code coverage paths
         working-directory: ./coverage
         run: |
+          ls -a
           sed -i 's@'$GITHUB_WORKSPACE'@/github/workspace/@g' coverage.json
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
