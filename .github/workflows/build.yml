@@ -29,21 +29,21 @@ jobs:
           mysql --host 127.0.0.1 --port 33306 -uroot -ppassword -e "SHOW GRANTS FOR 'root'@'localhost'"
           mysql --host 127.0.0.1 --port 33306 -uroot -ppassword -e "SET GLOBAL sql_mode = ''"
           mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql --host 127.0.0.1 --port 33306 -uroot -ppassword mysql
-      # - name: Setup Ruby and install gems
-      #   uses: ruby/setup-ruby@v1
-      #   with:
-      #     ruby-version: 2.7.3
-      #     bundler-cache: true
-      # - name: Create DB
-      #   env:
-      #     RAILS_ENV: test
-      #   run: |
-      #     gem install bundler --version 1.17.3
-      #     bundle install
-      #     bin/rails db:setup
+      - name: Setup Ruby and install gems
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.3
+          bundler-cache: true
+      - name: Create DB
+        env:
+          RAILS_ENV: test
+        run: |
+          gem install bundler --version 1.17.3
+          bundle install
+          bin/rails db:setup
 
-      # - name: Unit tests and coverage report
-      #   run: bundle exec rspec --format doc
+      - name: Unit tests and coverage report
+        run: bundle exec rspec --format doc
 
       - name: Fix code coverage paths
         # working-directory: ./coverage
