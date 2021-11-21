@@ -22,7 +22,7 @@ development:
 test:
   adapter: mysql2
   port: 3306
-  host: localhost
+  host: 127.0.0.1
   username: root
   password: password
   timeout: 5000
