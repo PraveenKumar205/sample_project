@@ -15,20 +15,21 @@ jobs:
         env:
           MYSQL_ROOT_PASSWORD: password
         ports:
-        - 3306
+        - 33306:3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+          
       - name: Verify MySQL
         run: |
           sudo apt-get update
           sudo apt-get install -y build-essential python-dev nginx-extras pkg-config cmake libxrender1 libmysqlclient-dev ncurses-dev gettext flex bison autoconf binutils-doc redis-tools vim nfs-common jq bc
-          mysql --host 127.0.0.1 --port 3306 -uroot -ppassword -e "SHOW GRANTS FOR 'root'@'localhost'"
-          mysql --host 127.0.0.1 --port 3306 -uroot -ppassword -e "SET GLOBAL sql_mode = ''"
-          mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql --host 127.0.0.1 --port 3306 -uroot -ppassword mysql
+          mysql --host 127.0.0.1 --port 33306 -uroot -ppassword -e "SHOW GRANTS FOR 'root'@'localhost'"
+          mysql --host 127.0.0.1 --port 33306 -uroot -ppassword -e "SET GLOBAL sql_mode = ''"
+          mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql --host 127.0.0.1 --port 33306 -uroot -ppassword mysql
       - name: Setup Ruby and install gems
         uses: ruby/setup-ruby@v1
         with:
