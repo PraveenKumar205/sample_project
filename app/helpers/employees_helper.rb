@@ -5,12 +5,12 @@ module EmployeesHelper
         result
     end
 
-    def helper_method
+    def self.helper_method
         "Hello"
         return "Hllo"
     end
 
-    def method_2
+    def self.say_hello_helper
         "Hello"
         return "Hllo"
     end
