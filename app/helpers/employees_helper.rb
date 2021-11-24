@@ -4,4 +4,14 @@ module EmployeesHelper
         result = 1 + 2
         result
     end
+
+    def self.helper_method
+        "Hello"
+        return "Hllo"
+    end
+
+    def self.say_hello_helper
+        "Hello"
+        return "Hllo"
+    end
 end
