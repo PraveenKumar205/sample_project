@@ -4,4 +4,8 @@ module EmployeesHelper
         result = 1 + 2
         result
     end
+
+    def helper_method
+        "Hello"
+    end
 end
