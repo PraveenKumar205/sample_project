@@ -7,5 +7,6 @@ module EmployeesHelper
 
     def helper_method
         "Hello"
+        return "Hllo"
     end
 end
