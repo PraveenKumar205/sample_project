@@ -9,4 +9,9 @@ module EmployeesHelper
         "Hello"
         return "Hllo"
     end
+
+    def method_2
+        "Hello"
+        return "Hllo"
+    end
 end
